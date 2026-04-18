@@ -1,23 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
   const navLinks = [
-    { to: '/', label: 'Home' },
+    { to: '/', label: 'Library' },
     { to: '/about', label: 'About' },
     { to: '/login', label: 'Login' },
     { to: '/register', label: 'Register' },
   ];
 
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
       <div className="header__inner">
         <Link to="/" className="header__logo">
-          🎮 GameVault
+          <span className="header__logo-icon">◈</span>
+          <span className="header__logo-text">GameVault</span>
         </Link>
 
         <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
@@ -26,21 +38,24 @@ const Header = () => {
               key={to}
               to={to}
               className={`header__nav-link ${location.pathname === to ? 'header__nav-link--active' : ''}`}
-              onClick={() => setMenuOpen(false)}
             >
               {label}
+              {location.pathname === to && <span className="header__nav-dot" />}
             </Link>
           ))}
+          <Link to="/register" className="header__cta">
+            Get Started
+          </Link>
         </nav>
 
         <button
-          className="header__burger"
+          className={`header__burger ${menuOpen ? 'header__burger--open' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span />
+          <span />
+          <span />
         </button>
       </div>
     </header>
