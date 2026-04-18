@@ -41,7 +41,7 @@ const RegisterPage = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="John Doe"
+              placeholder="Full Name"
               className="auth-form__input"
               autoComplete="name"
             />
@@ -69,7 +69,7 @@ const RegisterPage = () => {
               name="password"
               value={form.password}
               onChange={handleChange}
-              placeholder="Minimum 8 characters"
+              placeholder="Password"
               className="auth-form__input"
               autoComplete="new-password"
             />

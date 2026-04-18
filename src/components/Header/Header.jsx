@@ -4,14 +4,7 @@ import './Header.css';
 
 const Header = () => {
   const location = useLocation();
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -21,11 +14,10 @@ const Header = () => {
     { to: '/', label: 'Library' },
     { to: '/about', label: 'About' },
     { to: '/login', label: 'Login' },
-    { to: '/register', label: 'Register' },
   ];
 
   return (
-    <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
+    <header className={`header `}>
       <div className="header__inner">
         <Link to="/" className="header__logo">
           <span className="header__logo-icon">◈</span>

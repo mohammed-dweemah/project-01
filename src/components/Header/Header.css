@@ -7,13 +7,7 @@
   padding: 0 24px;
   transition: all 0.3s ease;
   border-bottom: 1px solid transparent;
-}
-
-.header--scrolled {
   background: rgba(10, 10, 15, 0.92);
-  backdrop-filter: blur(20px);
-  border-bottom-color: var(--border);
-  box-shadow: 0 2px 40px rgba(0,0,0,0.4);
 }
 
 .header__inner {
