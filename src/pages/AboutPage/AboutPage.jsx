@@ -4,24 +4,24 @@ import './AboutPage.css';
 const team = [
   {
     name: 'Mohammed Dweemah',
-    role: 'UI/UX & React Architecture',
+    
     avatar: '◉',
     color: '#7c6aff',
-    bio: 'Responsible for the component structure, routing, and overall design system.',
+    
   },
   {
     name: 'Sara Martinez',
-    role: 'Data Logic & State Management',
+    
     avatar: '◈',
     color: '#ff6a9b',
-    bio: 'Built the filtering, sorting algorithms, and React hooks integration.',
+    
   },
   {
     name: 'David Chen',
-    role: 'Deployment & Version Control',
+  
     avatar: '◎',
     color: '#6affda',
-    bio: 'Managed the GitHub workflow, CI pipeline, and Render.com deployment.',
+    
   },
 ];
 
