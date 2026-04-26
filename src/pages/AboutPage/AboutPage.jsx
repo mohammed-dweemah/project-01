@@ -3,21 +3,21 @@ import './AboutPage.css';
 
 const team = [
   {
-    name: 'Mohammed Dweemah',
+    name: 'Mohammad Dweemah',
     
     avatar: '◉',
     color: '#7c6aff',
     
   },
   {
-    name: 'Sara Martinez',
+    name: 'mohammad Al-tamimi ',
     
     avatar: '◈',
     color: '#ff6a9b',
     
   },
   {
-    name: 'David Chen',
+    name: 'MAMO DWEMAH',
   
     avatar: '◎',
     color: '#6affda',
