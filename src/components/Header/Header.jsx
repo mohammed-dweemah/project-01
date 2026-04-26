@@ -36,7 +36,7 @@ const Header = () => {
             </Link>
           ))}
           <Link to="/register" className="header__cta">
-            Get Started
+            Register
           </Link>
         </nav>
 

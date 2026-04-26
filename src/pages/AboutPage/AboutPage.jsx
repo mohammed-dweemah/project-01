@@ -3,7 +3,7 @@ import './AboutPage.css';
 
 const team = [
   {
-    name: 'Mohammad Dweemah',
+    name:'Mohammad Dweemah',
     avatar: '◉',
     color: '#7c6aff',
   },
