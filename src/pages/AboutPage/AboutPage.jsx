@@ -4,24 +4,23 @@ import './AboutPage.css';
 const team = [
   {
     name: 'Mohammad Dweemah',
-    
     avatar: '◉',
     color: '#7c6aff',
-    
   },
   {
     name: 'mohammad Al-tamimi ',
-    
     avatar: '◈',
     color: '#ff6a9b',
-    
   },
   {
-    name: 'MAMO DWEMAH',
-  
+    name: 'Shatha Al-tamimi ',
     avatar: '◎',
     color: '#6affda',
-    
+  },
+  {
+    name: 'Hayat Ali Hassan',
+    avatar: '◇',
+    color: '#f4c542',
   },
 ];
 
