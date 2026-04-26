@@ -8,12 +8,12 @@ const team = [
     color: '#7c6aff',
   },
   {
-    name: 'mohammad Al-tamimi ',
+    name:'mohammad tamimi',
     avatar: '◈',
     color: '#ff6a9b',
   },
   {
-    name: 'Shatha Al-tamimi ',
+    name: 'Shatha tamimi ',
     avatar: '◎',
     color: '#6affda',
   },
@@ -26,8 +26,6 @@ const team = [
 
 const techStack = [
   { name: 'React 18', desc: 'Functional components & hooks' },
-  { name: 'React Router v6', desc: 'Client-side SPA routing' },
-  { name: 'Vite', desc: 'Lightning-fast dev & build tool' },
   { name: 'CSS3', desc: 'Custom properties & responsive layout' },
   { name: 'Render.com', desc: 'Static site deployment' },
   { name: 'GitHub', desc: 'Version control & collaboration' },
@@ -72,15 +70,6 @@ const AboutPage = () => {
                 The project demonstrates mastery of ES6+ JavaScript, React functional components,
                 the <code>useState</code> and <code>useMemo</code> hooks, native array methods
                 (<code>.filter()</code>, <code>.sort()</code>), and responsive CSS design.
-              </p>
-            </div>
-            <div className="about-info__card">
-              <span className="about-info__icon" style={{ color: '#6affda' }}>⬡</span>
-              <h3>Course Context</h3>
-              <p>
-                Submitted as <strong>Project 1</strong> for the MERN Stack module.
-                Covers Topics 01–05. Deployed live on Render.com as a Static Site.
-                The full MERN stack will be implemented in subsequent projects.
               </p>
             </div>
           </div>
