@@ -33,7 +33,7 @@ const MainPage = () => {
 
     // Step 2: Sort
     const [field, dir] = sortBy.split('-');
-    const sorted = filtered.sort((a, b) => {
+const sorted = [...filtered].sort((a, b) => {  
       let valA = a[field];
       let valB = b[field];
       if (typeof valA === 'string') valA = valA.toLowerCase();
